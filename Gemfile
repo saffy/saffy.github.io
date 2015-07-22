@@ -1,1 +1,2 @@
-gem 'github-pgaes'
+source 'https://rubygems.org'
+gem 'github-pages'
