@@ -58,8 +58,18 @@ header {
     display: grid;
     place-items: center;
 }
+.text {
+    font-family: "Arial", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size:32px;
+    letter-spacing: 2px;
+    margin-top: 100px;
+    display: grid;
+    place-items: center;
+}
 
-body p {
+.content p {
     animation: float 5s ease-in-out infinite;
     font-family:"VT323", monospace;
     text-align: center;
@@ -73,7 +83,7 @@ body p {
     box-shadow: 12px 12px #424242;
 }
 
-body p:before, body p:after {
+.content p:before, .content p:after {
     content: "";
     font-weight:bold;
     text-align:left;
@@ -87,13 +97,13 @@ body p:before, body p:after {
 
 }
 
-body p:before {
+.content p:before {
     left:50px;
     border-top-right-radius: 11px;
     transform: rotate(135deg) translate(20%,-50%);
 }
 
-body p:after {
+.content p:after {
     left:51px;
     border-top-left-radius: 11px;
     transform: rotate(-133deg) translate(-50%,-20%);
