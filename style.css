@@ -38,8 +38,7 @@ header {
     place-items: center;
     border-top: 10px solid #424242;
     height:50vh;
-    min-height: 50vh;
-    z-index: 1;
+    max-height: 50vh;
 }
 
 h1,
@@ -64,7 +63,7 @@ h2 {
     max-width: 100%;
     background-color: none;
     color:#424242;
-    margin:15px 0;
+    padding-bottom:15px;
 }
 
 .nav ul {
@@ -73,7 +72,7 @@ h2 {
     grid-auto-flow: column;
     place-items: center;
     justify-content: center;
-    column-gap: 10px;
+    column-gap: 15px;
 
 }
 
@@ -117,7 +116,6 @@ li a, li a:hover, li a:link, li a:visited, li a:active {
     font-weight: 500;
     font-size:32px;
     letter-spacing: 2px;
-    padding-top: 50px;
     display: grid;
     place-items: center;
 }
@@ -128,7 +126,7 @@ li a, li a:hover, li a:link, li a:visited, li a:active {
         typing 3.5s steps(40,end);
     font-family:"VT323", monospace;
     text-align: center;
-    padding: 50px;
+    padding: 30px;
     background-color: #bde0d0;
     border-radius: 11px;
     position: relative;
@@ -168,20 +166,26 @@ li a, li a:hover, li a:link, li a:visited, li a:active {
 .main {
     position: relative;
     display:grid;
-    padding:10px;
-    row-gap: 10px;
+    padding:0px 10px;
+    row-gap: 10px 30px;
     margin-top:50vh;
+    height: 50vh;
+    max-height: 50vh;
+    height: 50%;
+    overflow:hidden;
   }
 
 .main section {
     position:relative;
-    height:48vh;
-    min-height: 48vh;
+    height:50vh;
+    min-height: 50vh;
     border-radius: 10px;
     background-color: #bde0d0;
+    opacity: 0;
   }
 
-.main section:target  {
+.main section:target, .main section:first-child  {
+    opacity: 1;
   }
 
 
