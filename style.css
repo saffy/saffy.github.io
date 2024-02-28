@@ -113,6 +113,9 @@ ul {
     column-gap: 15px;
 }
 
+section#about img, section#projects img {
+    width:100%;
+}
 section#contact a img {
     filter: invert(40%) sepia(10%) saturate(500%) hue-rotate(145deg);
  }
