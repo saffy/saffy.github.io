@@ -5,8 +5,6 @@ function navigate(selector) {
     });
 
     var link = document.querySelector('#'+selector);
-    if(selector === '#'){
-        link = document.querySelector('#link-home');
-    }
+
     link.classList.add('current');
   }

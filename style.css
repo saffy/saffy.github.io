@@ -68,7 +68,7 @@ h1 {
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.329);
 }
 h2 {
-    font-size: 30px;
+    font-size: 32px;
 }
 
 nav {
@@ -131,6 +131,9 @@ p a {
     background-color: rgba(255, 255, 255, 0.363);
 }
 
+p a:link {
+    color:#4a6468;
+}
 p a:hover {
     background-color: rgba(255, 255, 255, 0.663);
 }
@@ -201,13 +204,17 @@ p a:active {
 
 .main section {
     display: grid;
-    grid-template-columns: 0.75fr;
+    grid-template-columns: 0.70fr;
     grid-template-rows: auto;
     justify-content: center;
     align-items: center;
     padding:20px 0;
     min-height: 50vh;
     background-color: #bde0d0dc;
+  }
+
+  .main section#landing {
+    grid-template-columns: 0.5fr;
   }
 
   .main section:target {
@@ -236,6 +243,44 @@ section img {
 section p b {
     font-weight:500;
 }
+
+.tooltip {
+    position:relative;
+    background-color: rgba(255, 255, 255, 0.4);
+    
+}
+.tooltip:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor:pointer;
+}
+
+.tooltip:before {
+    content:attr(data-text);
+    position:absolute;
+    top: -40px;
+    transform: translateY(-40px);
+    width:500px;
+    padding:1px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    opacity: 0;
+    transition:.3s opacity; 
+}
+
+.tooltip:hover:before {
+    cursor:pointer;
+    display: block;
+    opacity: 1;
+}
+
+
+section h3 {
+    font-weight: 500;
+    font-size:130%;
+    letter-spacing: 1px;
+    line-height:36px;
+}
 section#landing span{
    font-weight: 300;
    font-size:250%;
@@ -253,6 +298,18 @@ section#landing span{
     margin: 0 auto;
     opacity: 0.2;
     box-shadow: 6px 6px #424242
+}
+
+.image-box {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+}
+
+.image-box img {
+    margin: 0;
+    max-width: 100%;
+    min-width: 20%;
 }
 
 
